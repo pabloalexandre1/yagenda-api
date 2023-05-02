@@ -106,14 +106,14 @@ class UserController {
                         port: 587,
                         secure: false,
                         auth: {
-                            user: "pablo.barros1@outlook.com",
-                            pass: "umburana2012"
+                            user: "---EMAIL---",
+                            pass: "---PASSWORD---"
                         }
                     });
 
                      
                     transporter.sendMail({
-                        from: "Pablo Barros <pablo.barros1@outlook.com>",
+                        from: "Pablo Barros <---EMAIL--->",
                         to: email,
                         subject: "YAGENDA - confirmação de email",
                         text: "obrigado por realizar a inscrição na nossa plataforma, falta apenas um passo para começar a usufrir da mesma, clique no link a seguir e confirme que este email é seu!: "+ process.env.FRONT_URL +"/user/emailconfirmation/" + idd,
