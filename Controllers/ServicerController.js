@@ -749,14 +749,14 @@ class ServicerController {
                 port: 587,
                 secure: false,
                 auth: {
-                    user: "pablo.barros1@outlook.com",
-                    pass: "umburana2012"
+                    user: "---EMAIL---",
+                    pass: "---PASSWORD--"
                 }
             });
 
              
             transporter.sendMail({
-                from: "Pablo Barros <pablo.barros1@outlook.com>",
+                from: "Pablo Barros <---EMAIL--->",
                 to: email,
                 subject: "YAGENDA - redefinição de senha",
                 text: "clique no link a seguir, ou copie e cole no seu navegador, para ir para a pagina de redefinição de sua senha: "+ process.env.FRONT_URL +"/servicer/define-password/"+ email + '/' + recoverpass,
